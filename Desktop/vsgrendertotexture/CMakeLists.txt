@@ -4,4 +4,4 @@ set(SOURCES
 
 add_executable(vsgrendertotexture ${SOURCES})
 
-target_link_libraries(vsgrendertotexture vsg::vsg)
+target_link_libraries(vsgrendertotexture vsg)

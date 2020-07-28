@@ -5,7 +5,7 @@ set(SOURCES
 
 add_executable(vsgheadless ${SOURCES})
 
-target_link_libraries(vsgheadless vsg::vsg)
+target_link_libraries(vsgheadless vsg)
 
 if (vsgXchange_FOUND)
     target_compile_definitions(vsgheadless PRIVATE USE_VSGXCHANGE)

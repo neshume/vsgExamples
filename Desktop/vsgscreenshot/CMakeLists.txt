@@ -5,7 +5,7 @@ set(SOURCES
 
 add_executable(vsgscreenshot ${SOURCES})
 
-target_link_libraries(vsgscreenshot vsg::vsg)
+target_link_libraries(vsgscreenshot vsg)
 
 if (vsgXchange_FOUND)
     target_compile_definitions(vsgscreenshot PRIVATE USE_VSGXCHANGE)

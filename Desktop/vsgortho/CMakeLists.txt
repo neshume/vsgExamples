@@ -4,4 +4,4 @@ set(SOURCES
 
 add_executable(vsgortho ${SOURCES})
 
-target_link_libraries(vsgortho vsg::vsg)
+target_link_libraries(vsgortho vsg)
