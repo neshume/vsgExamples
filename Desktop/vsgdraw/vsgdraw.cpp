@@ -14,7 +14,8 @@ int main(int argc, char** argv)
     if (arguments.errors()) return arguments.writeErrorMessages(std::cerr);
 
     // set up search paths to SPIRV shaders and textures
-    vsg::Paths searchPaths = vsg::getEnvPaths("VSG_FILE_PATH");
+    vsg::Paths searchPaths;// = vsg::getEnvPaths("VSG_FILE_PATH");
+    searchPaths.push_back(VSG_RUNTIME_RESOURCE_DIR);
 
     // load shaders
     vsg::ref_ptr<vsg::ShaderStage> vertexShader = vsg::ShaderStage::read(VK_SHADER_STAGE_VERTEX_BIT, "main", vsg::findFile("shaders/vert_PushConstants.spv", searchPaths));
